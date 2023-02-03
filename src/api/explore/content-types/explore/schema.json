@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "explores",
+  "info": {
+    "singularName": "explore",
+    "pluralName": "explores",
+    "displayName": "explore",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "imagecolorslider": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "features.featuress"
+    }
+  }
+}
