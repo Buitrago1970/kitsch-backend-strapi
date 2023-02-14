@@ -50,6 +50,16 @@
       "type": "component",
       "repeatable": true,
       "component": "features.featuress"
+    },
+    "colors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colors.colors"
+    },
+    "sizes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "size.size"
     }
   }
 }

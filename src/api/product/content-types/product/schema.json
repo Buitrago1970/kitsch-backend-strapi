@@ -42,14 +42,27 @@
       "component": "features.featuress"
     },
     "imagecolorslider": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "colors": {
+      "displayName": "colors",
+      "type": "component",
+      "repeatable": true,
+      "component": "colors.colors"
+    },
+    "sizes": {
+      "displayName": "size",
+      "type": "component",
+      "repeatable": true,
+      "component": "size.size"
     }
   }
 }

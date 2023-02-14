@@ -15,7 +15,7 @@
     "name": {
       "type": "string"
     },
-    "images": {
+    "image": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -32,6 +32,14 @@
     "price": {
       "type": "biginteger"
     },
+    "slug": {
+      "type": "uid"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "features.featuress"
+    },
     "imagecolorslider": {
       "type": "media",
       "multiple": true,
@@ -43,13 +51,15 @@
         "audios"
       ]
     },
-    "slug": {
-      "type": "uid"
-    },
-    "features": {
+    "colors": {
       "type": "component",
       "repeatable": true,
-      "component": "features.featuress"
+      "component": "colors.colors"
+    },
+    "sizes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "size.size"
     }
   }
 }
